@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css-pro/bk.css" rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bk-icon-2.0/iconfont.css" rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css-pro/layout/sidebar.css" rel="stylesheet">
+    <!-- 若您需要使用Kendo UI Professional，请联系版权人获得合法的授权或许可。 -->
+    <!-- Bootstrap css -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css"
+          rel="stylesheet">
+    <!-- kendo ui css -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.common.min.css"
+          rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.default.min.css"
+          rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/fontawesome/css/font-awesome.css" rel="stylesheet">
+    <!--蓝鲸提供的公用样式库 -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css/bk.css" rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css/bk_pack.css" rel="stylesheet">
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/echarts-2.0/echarts-all.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <!-- 包括所有kendoui的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/js/kendo.all.min.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/echarts-2.0/echarts-all.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/bk/js/bk.js"></script>
+    <!-- 数据埋点统计 -->
+    <script src="http://magicbox.bk.tencent.com/static_api/analysis.js"></script>
+
+    <title>Styles</title>
+    <style>
+        .footer-clean {
+            padding: 50px 0;
+            background-color: #fff;
+            color: #4b4c4d;
+        }
+
+        .footer-clean h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .footer-clean ul {
+            padding: 0;
+            list-style: none;
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .footer-clean ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .footer-clean ul a:hover {
+            opacity: 1;
+        }
+
+        .footer-clean .item.social {
+            text-align: right;
+        }
+
+        @media (max-width: 767px) {
+            .footer-clean .item {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-clean .item.social {
+                text-align: center;
+            }
+        }
+
+        .footer-clean .item.social > a {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+            margin-top: 22px;
+            color: inherit;
+            opacity: 0.75;
+        }
+
+        .footer-clean .item.social > a:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 991px) {
+            .footer-clean .item.social > a {
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .footer-clean .item.social > a {
+                margin-top: 10px;
+            }
+        }
+
+        .footer-clean .copyright {
+            margin-top: 14px;
+            margin-bottom: 0;
+            font-size: 13px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+<div style="padding: 0.5%; padding-left: 7.5%; padding-right: 7.5%; margin-top: 2%">
+    <script src="//unpkg.com/vue/dist/vue.js"></script>
+    <script src="//unpkg.com/element-ui@2.15.3/lib/index.js"></script>
+    <div style="text-align: center; margin-bottom: 1.5%">
+        <h1 style="font-size: xxx-large; font-family: monaco,Consolas,Lucida Console,monospace;"><b>Play With Styles</b>
+        </h1>
+    </div>
+    <div id="app">
+        <el-menu default-active="2" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+            <el-menu-item index="1" style="font-size: x-large"><a href="/" style="text-decoration: none"><b>Gallery</b></a>
+            </el-menu-item>
+            <el-menu-item index="2" style="font-size: x-large"><a href="/styles/" style="text-decoration: none"><b>Styles</b></a>
+            </el-menu-item>
+{#            <el-menu-item index="3" style="font-size: x-large"><a href="/platform/" style="text-decoration: none"><b>Platforms</b></a>#}
+{#            </el-menu-item>#}
+            <el-menu-item index="4" style="font-size: x-large"><a href="/contact/" style="text-decoration: none"><b>About
+                Us</b></a></el-menu-item>
+        </el-menu>
+        <div class="line"></div>
+    </div>
+    <div class="line" style="margin-top: 100px"></div>
+    <div class="king-page-box king-layout1-main clearfix">
+        <div class="king-layout1-sidebar column" style="width:216px;">
+            <nav style="height:100%;" class="   f14">
+                <div class="king-vertical-nav4" style="border: 0px">
+                    <div class="sidebar-inner" style="background: white; border-color: white">
+                        <ul class="navi" style="border: 0px; margin-left: 30px">
+                            <li class="has_submenu current open c-open active">
+                                <a href="javascript:void(0);" style="background: white; border-top: 0px; margin-bottom: 20px"> <i class="fa fa-image "></i>
+                                    <span>Schedule</span>
+                                    <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                                </a>
+                                <ul class="sub-menu" style="text-align: center; border: 0px">
+                                    <div style="margin-top: 10px">
+                                        <button class="bk-text-button bk-default" id="w1" value=1>Week 1</button>
+                                    </div>
+                                    <div style="margin-top: 10px">
+                                        <button class="bk-text-button bk-default" id="w2" value=2 disabled>Week 2 comming...</button>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        {% load static %}
+        <div class="king-content-wrap" id="table">
+            <div class="king-layout1-content" style="margin-left: 270px; text-align: center">
+                <div class="container-fluid mb0 ">
+                    <div class="row" style="margin-bottom: 150px">
+                        <div class="col-md-6">
+                            <img class=" " src="../static/images/{{ week }}-1-1.jpg" style="width: 600px; height: 800px"><br>
+                            <img class=" " src="../static/images/{{ week }}-1-2.jpg" style="margin-top: 150px; width: 600px; height: 800px"><br>
+                            <img class=" " src="../static/images/{{ week }}-1-3.jpg" style="margin-top: 150px; width: 600px; height: 800px"><br>
+                            <img class=" " src="../static/images/{{ week }}-1-4.jpg" style="margin-top: 150px; width: 600px; height: 800px"><br>
+                            <img class=" " src="../static/images/{{ week }}-1-5.jpg" style="margin-top: 150px; width: 600px; height: 800px"><br>
+                        </div>
+                        <div class="col-md-6">
+                            <img class=" " src="../static/images/{{ week }}-2-1.jpg" style="width: 600px; height: 800px"><br>
+                            <img class=" " src="../static/images/{{ week }}-2-2.jpg" style="margin-top: 150px; width: 600px; height: 800px"><br>
+                            <img class=" " src="../static/images/{{ week }}-2-3.jpg" style="margin-top: 150px; width: 600px; height: 800px"><br>
+                            <img class=" " src="../static/images/{{ week }}-2-4.jpg" style="margin-top: 150px; width: 600px; height: 800px"><br>
+                            <img class=" " src="../static/images/{{ week }}-2-5.jpg" style="margin-top: 150px; width: 600px; height: 800px"><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-clean">
+        <hr>
+        <footer style="margin-top: 2%">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Seeking</h3>
+                        <ul>
+                            <li>Have Fun</li>
+                            <li>Be Positive</li>
+                            <li>Be UR self</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About Us</h3>
+                        <ul>
+                            <li>WISC</li>
+                            <li>ASIAN</li>
+                            <li>Pop Culture</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Future</h3>
+                        <ul>
+                            <li>More Clicks</li>
+                            <li>More Fans</li>
+                            <li>More Fun</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <a href="https://github.com/xudm2000/play"><i class="icon ion-social-github"></i></a>
+                        <a href="https://www.youtube.com/channel/UCY8NYVKMloF-jAdWd7YIYQg"><i class="icon ion-social-youtube"></i></a>
+                        <a href="https://instagram.com/yoda__yd?utm_medium=copy_link"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Play Style © 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+<script>
+    export default {
+        data () {
+            return {
+                activeIndex: '1',
+                activeIndex2: '1'
+            };
+        },
+        methods: {
+            handleSelect (key, keyPath) {
+                console.log(key, keyPath);
+            },
+            handleOpen (key, keyPath) {
+                console.log(key, keyPath);
+            },
+            handleClose (key, keyPath) {
+                console.log(key, keyPath);
+            }
+        }
+    }
+</script>
+<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#w1").click(function () {
+            $.ajax({
+                url: "/styles/reload",
+                type: "get",
+                data: {
+                    "week": "1",
+                },
+                dataType: 'json',
+                success: function () {
+                },
+                complete: function () {
+                    $('#table').load(
+                        '/styles/reload?week=1 #table'
+                    )
+                }
+            })
+        })
+    })
+</script>
+
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {visible: false}
+        }
+    })
+</script>
+</html>

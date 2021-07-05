@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contact Us</title>
+    <style>
+        .footer-clean {
+            padding: 50px 0;
+            background-color: #fff;
+            color: #4b4c4d;
+        }
+
+        .footer-clean h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .footer-clean ul {
+            padding: 0;
+            list-style: none;
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .footer-clean ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .footer-clean ul a:hover {
+            opacity: 1;
+        }
+
+        .footer-clean .item.social {
+            text-align: right;
+        }
+
+        @media (max-width: 767px) {
+            .footer-clean .item {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-clean .item.social {
+                text-align: center;
+            }
+        }
+
+        .footer-clean .item.social > a {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+            margin-top: 22px;
+            color: inherit;
+            opacity: 0.75;
+        }
+
+        .footer-clean .item.social > a:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 991px) {
+            .footer-clean .item.social > a {
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .footer-clean .item.social > a {
+                margin-top: 10px;
+            }
+        }
+
+        .footer-clean .copyright {
+            margin-top: 14px;
+            margin-bottom: 0;
+            font-size: 13px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+<div style="padding: 0.5%; padding-left: 7.5%; padding-right: 7.5%; margin-top: 2%">
+    <script src="//unpkg.com/vue/dist/vue.js"></script>
+    <script src="//unpkg.com/element-ui@2.15.3/lib/index.js"></script>
+    <div style="text-align: center; margin-bottom: 1.5%">
+        <h1 style="font-size: xxx-large; font-family: monaco,Consolas,Lucida Console,monospace;"><b>Play With Styles</b>
+        </h1>
+    </div>
+    <div id="app">
+        <el-menu default-active="4" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+            <el-menu-item index="1" style="font-size: x-large"><a href="/" style="text-decoration: none"><b>Gallery</b></a>
+            </el-menu-item>
+            <el-menu-item index="2" style="font-size: x-large"><a href="/styles/" style="text-decoration: none"><b>Styles</b></a>
+            </el-menu-item>
+            {#            <el-menu-item index="3" style="font-size: x-large"><a href="/platform/" style="text-decoration: none"><b>Platforms</b></a>#}
+            {#            </el-menu-item>#}
+            <el-menu-item index="4" style="font-size: x-large"><a href="/contact/" style="text-decoration: none"><b>About
+                Us</b></a></el-menu-item>
+        </el-menu>
+        <div class="line"></div>
+    </div>
+
+    <div class="line" style="margin-top: 50px"></div>
+
+    <div style="text-align: center; font-size: xx-large">
+        <p style="margin-top: 80px"><b style="font-family: Monaco,Consolas,Lucida Console,monospace;">模特 Model: </b><span>余达 Yoda</span></p>
+        <p style="margin-top: 60px"><b style="font-family: Monaco,Consolas,Lucida Console,monospace;">摄影 Photo: </b><span>胡潇 Xiao</span></p>
+        <p style="margin-top: 60px"><b style="font-family: Monaco,Consolas,Lucida Console,monospace;">网站 Web: </b><span>徐德明 MeloDez</span></p>
+    </div>
+
+    <div class="footer-clean">
+        <hr>
+        <footer style="margin-top: 2%">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Seeking</h3>
+                        <ul>
+                            <li>Have Fun</li>
+                            <li>Be Positive</li>
+                            <li>Be UR self</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About Us</h3>
+                        <ul>
+                            <li>WISC</li>
+                            <li>ASIAN</li>
+                            <li>Pop Culture</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Future</h3>
+                        <ul>
+                            <li>More Clicks</li>
+                            <li>More Fans</li>
+                            <li>More Fun</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <a href="https://github.com/xudm2000/play"><i class="icon ion-social-github"></i></a>
+                        <a href="https://www.youtube.com/channel/UCY8NYVKMloF-jAdWd7YIYQg"><i class="icon ion-social-youtube"></i></a>
+                        <a href="https://instagram.com/yoda__yd?utm_medium=copy_link"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Play Style © 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</div>
+
+<script>
+    export default {
+        data () {
+            return {
+                activeIndex: '1',
+                activeIndex2: '1'
+            };
+        },
+        methods: {
+            handleSelect (key, keyPath) {
+                console.log(key, keyPath);
+            }
+        }
+    }
+</script>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {visible: false}
+        }
+    })
+</script>
+</html>

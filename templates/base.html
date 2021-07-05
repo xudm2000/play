@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <title></title>
+</head>
+<body>
+<div style="padding: 0.5%; padding-left: 7.5%; padding-right: 7.5%">
+    <script src="//unpkg.com/vue/dist/vue.js"></script>
+    <script src="//unpkg.com/element-ui@2.15.3/lib/index.js"></script>
+    <div>
+        <h1 style="text-align: center">Play Style</h1>
+    </div>
+    <div id="app">
+        <el-menu default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+            <el-menu-item index="1" style="font-size: x-large"><b>Gallery</b></el-menu-item>
+            <el-menu-item index="2" style="font-size: x-large"><b>Styles</b></el-menu-item>
+            <el-menu-item index="3" style="font-size: x-large"><b>Platforms</b></el-menu-item>
+            <el-menu-item index="4" style="font-size: x-large"><b>Contact Us</b></el-menu-item>
+        </el-menu>
+        <div class="line"></div>
+        <div style="padding-left: 0.5%">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+<script>
+    export default {
+        data () {
+            return {
+                activeIndex: '1',
+                activeIndex2: '1'
+            };
+        },
+        methods: {
+            handleSelect (key, keyPath) {
+                console.log(key, keyPath);
+            }
+        }
+    }
+</script>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {visible: false}
+        }
+    })
+</script>
+</html>
